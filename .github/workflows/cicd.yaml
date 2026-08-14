@@ -16,7 +16,7 @@ jobs:
         run: |
           hostnamectl
 
-          build-and-push2:
+  build-and-push2:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +27,7 @@ jobs:
         run: |
           hostnamectl
 
-          build-and-push3:
+  build-and-push3:
     runs-on: ubuntu-latest
 
     steps:
