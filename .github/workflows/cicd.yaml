@@ -5,13 +5,35 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-push1:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
 
-      - name: Docker build
+      - name: Docker build1
+        run: |
+          hostnamectl
+
+          build-and-push2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Docker build2
+        run: |
+          hostnamectl
+
+          build-and-push3:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Docker build3
         run: |
           hostnamectl
