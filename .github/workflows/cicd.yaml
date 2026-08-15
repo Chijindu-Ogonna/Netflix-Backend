@@ -24,7 +24,7 @@ jobs:
 
       - name: Docker build1
         run: |
-          echo "${{ vars.APPLICATION_PROPERTIES }}" > .application.properties
+          echo "${{ vars.APPLICATION_PROPERTIES }}" > application.properties
           # ls -la
           # cat application.properties
           docker build -t netflix_backend:latest .
